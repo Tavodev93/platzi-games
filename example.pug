@@ -1,0 +1,13 @@
+extend componentes/plantilla.pug
+block contenidos
+    main.container 
+        aside 
+            h3 Menu 
+            each enlace in enlaces 
+                li=enlace
+        section.intro
+            .intro__contenido
+                h2 #{titulos[0]} 
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iste sapiente, nesciunt, fuga non sit tenetur aspernatur doloremque, eum aliquam culpa. Minima beatae necessitatibus molestiae expedita aliquid? Reiciendis voluptates. 
+                span Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iste sapiente, nesciunt, fuga non sit tenetur aspernatur doloremque, eum aliquam culpa. Minima beatae necessitatibus molestiae expedita aliquid? Reiciendis voluptates. 
+                a.boton Leer Mas

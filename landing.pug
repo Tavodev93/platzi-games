@@ -1,0 +1,13 @@
+extend componentes/plantilla.pug
+block contenidos
+		section.intro
+			.intro__imagen: img(src="images/imagen.png")
+			.intro__contenido
+				h2 #{titulos[0]} 
+				p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iste sapiente, nesciunt, fuga non sit tenetur aspernatur doloremque, eum aliquam culpa. Minima beatae necessitatibus molestiae expedita aliquid? Reiciendis voluptates. 
+					span Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iste sapiente, nesciunt, fuga non sit tenetur aspernatur doloremque, eum aliquam culpa. Minima beatae necessitatibus molestiae expedita aliquid? Reiciendis voluptates. 
+				a.boton Leer Mas
+		main.contenido 
+			+caja("imagen.png", titulos[1], "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iste sapiente, nesciunt, fuga non sit tenetur aspernatur doloremque, eum aliquam culpa. Minima beatae necessitatibus molestiae expedita aliquid? Reiciendis voluptates.")
+			+caja("imagen.png", titulos[2], "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iste sapiente, nesciunt, fuga non sit tenetur aspernatur doloremque, eum aliquam culpa. Minima beatae necessitatibus molestiae expedita aliquid? Reiciendis voluptates.")
+			+caja("imagen.png", titulos[3], "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iste sapiente, nesciunt, fuga non sit tenetur aspernatur doloremque, eum aliquam culpa. Minima beatae necessitatibus molestiae expedita aliquid? Reiciendis voluptates.")
